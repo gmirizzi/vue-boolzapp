@@ -31,14 +31,14 @@ header {
     width: 1000px;
 }
 
-.userInfo {
+.user {
     display: flex;
     align-items: center;
     padding: .5em;
     gap: .5em;
 }
 
-.userInfo img{
+.user img{
     height: 2.5em;
     width: 2.5em;
     border-radius: 50%;
@@ -62,6 +62,32 @@ header {
 #notifiche {
     height: 70px;
     background-color: #8edafcff;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    gap: .7em;
+}
+
+#notifiche div:first-child {
+    height: 2em;
+    width: 2em;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8edafcff;
+    font-size: 1.5rem;
+}
+
+#notifiche h1 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+#notifiche a {
+    color: #5a8bb7ff;
+    font-size: .8rem;
 }
 
 #search {
