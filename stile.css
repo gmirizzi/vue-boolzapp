@@ -136,6 +136,9 @@ header {
 
 .ora {
     position: absolute;
+}
+
+.chat .ora {
     top: .5em;
     right: .5em;
 }
@@ -183,8 +186,15 @@ header {
 }
 
 .text {
-    padding: 1em;
+    padding: 1em 1em 1.5em;
     border-radius: 7px;
+    flex-basis: 220px;
+    position: relative;
+}
+
+.text .ora {
+    bottom: .5em;
+    right: .5em;
 }
 
 #textArea {
