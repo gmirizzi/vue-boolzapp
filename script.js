@@ -6,35 +6,196 @@ const app = new Vue (
             chat: [
                 {
                     name: "Michele",
-                    foto: "img/avatar_1.jpg"
+                    foto: "img/avatar_1.jpg",
+                    messages: [
+                        {
+                            text:"Hai portato a spasso il cane?",
+                            ora: "15:30",
+                            sent: true
+                        },
+                        {
+                            text:"Ricordati di stendere i panni",
+                            ora: "15:50",
+                            sent: true
+                        },
+                        {
+                            text:"Tutto fatto!",
+                            ora: "16:15",
+                            sent: false
+                        }
+                    ]
                 },
                 {
                     name: "Fabio",
-                    foto: "img/avatar_2.jpg"
+                    foto: "img/avatar_2.jpg",
+                    messages: [
+                        {
+                            text:"Esci stasera?",
+                            ora: "15:30",
+                            sent: true
+                        },
+                        {
+                            text:"Seh usciamo...",
+                            ora: "16:15",
+                            sent: false
+                        }
+                    ]
                 },
                 {
                     name: "Samuele",
-                    foto: "img/avatar_3.jpg"
+                    foto: "img/avatar_3.jpg",
+                    messages: [
+                        {
+                            text:"Povero Gabbiano",
+                            ora: "15:30",
+                            sent: true
+                        },
+                        {
+                            text:"Hai perduto la compagna",
+                            ora: "15:50",
+                            sent: false
+                        },
+                        {
+                            text:"haahahhahahahahahhahahahhahahhaahhaahhahhahhhahahhhaahahhahahahahahhahahahhahahhaahhaahhahhahhhahahhhaahahhahahahahahhahahahhahahhaahhaahhahhahhhahahh",
+                            ora: "16:15",
+                            sent: false
+                        }
+                    ]
                 },
                 {
                     name: "Alessandro B.",
-                    foto: "img/avatar_4.jpg"
+                    foto: "img/avatar_4.jpg",
+                    messages: [
+                        {
+                            text:"Hai portato a spasso il cane?",
+                            ora: "15:30",
+                            sent: true
+                        },
+                        {
+                            text:"Ricordati di stendere i panni",
+                            ora: "15:50",
+                            sent: true
+                        },
+                        {
+                            text:"Tutto fatto!",
+                            ora: "16:15",
+                            sent: false
+                        },
+                        {
+                            text:"Hai portato a spasso il cane?",
+                            ora: "15:30",
+                            sent: true
+                        },
+                        {
+                            text:"Ricordati di stendere i panni",
+                            ora: "15:50",
+                            sent: true
+                        },
+                        {
+                            text:"Tutto fatto!",
+                            ora: "16:15",
+                            sent: false
+                        },
+                        {
+                            text:"Hai portato a spasso il cane?",
+                            ora: "15:30",
+                            sent: true
+                        },
+                        {
+                            text:"Ricordati di stendere i panni",
+                            ora: "15:50",
+                            sent: true
+                        },
+                        {
+                            text:"Tutto fatto!",
+                            ora: "16:15",
+                            sent: false
+                        }
+                    ]
                 },
                 {
                     name: "Alessandro L.",
-                    foto: "img/avatar_5.jpg"
+                    foto: "img/avatar_5.jpg",
+                    messages: [
+                        {
+                            text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nemo commodi nam doloremque, unde impedit! Ipsum consectetur, cum vel sint minus dolor inventore! Labore assumenda nobis et, repellendus ipsum aut!",
+                            ora: "15:30",
+                            sent: true
+                        },
+                        {
+                            text:"Ricordati di stendere i panni",
+                            ora: "15:50",
+                            sent: true
+                        },
+                        {
+                            text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nemo commodi nam doloremque, unde impedit! Ipsum consectetur, cum vel sint minus dolor inventore! Labore assumenda nobis et, repellendus ipsum aut!",
+                            ora: "16:15",
+                            sent: false
+                        }
+                    ]
                 },
                 {
                     name: "Claudia",
-                    foto: "img/avatar_6.jpg"
+                    foto: "img/avatar_6.jpg",
+                    messages: [
+                        {
+                            text:"Hai portato a spasso il cane?",
+                            ora: "15:30",
+                            sent: true
+                        },
+                        {
+                            text:"Ricordati di stendere i panni",
+                            ora: "15:50",
+                            sent: true
+                        },
+                        {
+                            text:"Tutto fatto!",
+                            ora: "16:15",
+                            sent: false
+                        }
+                    ]
                 },
                 {
                     name: "Federico",
-                    foto: "img/avatar_7.jpg"
+                    foto: "img/avatar_7.jpg",
+                    messages: [
+                        {
+                            text:"Hai portato a spasso il cane?",
+                            ora: "15:30",
+                            sent: true
+                        },
+                        {
+                            text:"Ricordati di stendere i panni",
+                            ora: "15:50",
+                            sent: true
+                        },
+                        {
+                            text:"Tutto fatto!",
+                            ora: "16:15",
+                            sent: false
+                        }
+                    ]
                 },
                 {
                     name: "Davide",
-                    foto: "img/avatar_8.jpg"
+                    foto: "img/avatar_8.jpg",
+                    messages: [
+                        {
+                            text:"Hai portato a spasso il cane?",
+                            ora: "15:30",
+                            sent: true
+                        },
+                        {
+                            text:"Ricordati di stendere i panni",
+                            ora: "15:50",
+                            sent: true
+                        },
+                        {
+                            text:"Don't kill my vibe",
+                            ora: "16:15",
+                            sent: false
+                        }
+                    ]
                 }
             ]
         }

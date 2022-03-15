@@ -67,22 +67,10 @@
                 </div>
             </div>
             <div id="conversazione">
-                <div class="messaggio inviato">
+                <div v-for="message in chat[activeIndex].messages" class="messaggio" :class="message.sent?'inviato':'ricevuto'">
                     <div class="text">
-                        Hai portato a spasso il cane?
-                        <div class="ora">15:30</div>
-                    </div>
-                </div>
-                <div class="messaggio inviato">
-                    <div class="text">
-                        Ricordati di stendere i panni
-                        <div class="ora">15:50</div>
-                    </div>
-                </div>
-                <div class="messaggio ricevuto">
-                    <div class="text">
-                        Tutto fatto!
-                        <div class="ora">16:15</div>
+                        {{message.text}}
+                        <div class="ora">{{message.ora}}</div>
                     </div>
                 </div>
             </div>

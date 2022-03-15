@@ -185,10 +185,11 @@ header {
     background-color: white;
 }
 
+/* FIXME: Overflow */
 .text {
     padding: 1em 1em 1.5em;
     border-radius: 7px;
-    flex-basis: 220px;
+    max-width: 220px;
     position: relative;
 }
 
