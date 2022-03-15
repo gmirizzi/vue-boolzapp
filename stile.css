@@ -162,6 +162,29 @@ header {
     height: calc(100% - 100px);
     background-image: url(img/mine.jpg);
     overflow-y: scroll;
+    padding: 3em 5em;
+}
+
+.messaggio {
+    display: flex;
+    margin: .5em 0;
+}
+
+.messaggio.inviato {
+    justify-content:flex-end;
+}
+
+.inviato .text{
+    background-color: #d5f9baff;
+}
+
+.ricevuto .text{
+    background-color: white;
+}
+
+.text {
+    padding: 1em;
+    border-radius: 7px;
 }
 
 #textArea {
