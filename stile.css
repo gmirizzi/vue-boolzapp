@@ -14,7 +14,7 @@
 
 .accesso, .ora, .last-message {
     color: var(--secondary-color);
-    font-size: .8rem;
+    font-size: .7rem;
 }
 
 body {
@@ -215,4 +215,8 @@ button {
 #textArea input {
     flex-grow: 1;
     padding: 5px;
+}
+
+.active {
+    background-color: #e9ebebff;
 }

@@ -2,9 +2,10 @@ const app = new Vue (
     {
         el:"#app",
         data: {
+            activeIndex:0,
             chat: [
                 {
-                    name: "Marco",
+                    name: "Michele",
                     foto: "img/avatar_1.jpg"
                 },
                 {
