@@ -39,23 +39,16 @@
                 <input type="text" placeholder="Cerca o inizia una nuova chat">
             </div>
             <div id="chatList">
-                <div class="chat">
+                <div v-for="element in chat" class="chat">
                     <div class="user">
-                        <img src="img/avatar_1.jpg" alt="">
+                        <img :src="element.foto" alt="">
                         <div class="info">
-                            <div class="name">Michele</div>
+                            <div class="name">{{element.name}}</div>
                             <div class="last-message">Ultimo messaggio inviato</div>
                             <div class="ora">12:00</div>
                         </div>
                     </div>
                 </div>
-                <div class="chat"></div>
-                <div class="chat"></div>
-                <div class="chat"></div>
-                <div class="chat"></div>
-                <div class="chat"></div>
-                <div class="chat"></div>
-                <div class="chat"></div>
             </div>
         </div>
         <div id="chatAperta">
@@ -81,5 +74,9 @@
             </div>
         </div>
     </div>
+    <!-- link vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- link js -->
+    <script src="script.js"></script>
 </body>
 </html>
