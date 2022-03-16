@@ -188,7 +188,7 @@ header {
 .text {
     padding: 1em 1em 1.5em;
     border-radius: 7px;
-    max-width: 220px;
+    width: 220px;
     position: relative;
     overflow-wrap: break-word;
 }

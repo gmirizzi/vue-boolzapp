@@ -3,11 +3,6 @@ const app = new Vue(
         el: "#app",
         data: {
             newText:"",
-            standardText:{
-                text: "Don't kill my vibe",
-                ora: "16.17",
-                sent: false
-            },
             activeIndex: 0,
             chat: [
                 {
@@ -208,9 +203,10 @@ const app = new Vue(
         methods: {
             sendText(){
                 if (this.newText != "") {
+                    const date= new Date()
                     const newElement={
                         text: this.newText,
-                        ora: "16:15",
+                        ora: date.toLocaleTimeString('it-IT'),
                         sent: true
                     }
                     this.chat[this.activeIndex].messages.push(newElement)
@@ -219,7 +215,13 @@ const app = new Vue(
                 setTimeout(this.answer,1000)
             },
             answer(){
-                this.chat[this.activeIndex].messages.push(this.standardText)                
+                const date= new Date()
+                const standardText={
+                    text: "Don't kill my vibe",
+                    ora: date.toLocaleTimeString('it-IT'),
+                    sent: false
+                }
+                this.chat[this.activeIndex].messages.push(standardText);              
             }
         }
     }
