@@ -3,6 +3,11 @@ const app = new Vue(
         el: "#app",
         data: {
             newText:"",
+            standardText:{
+                text: "Don't kill my vibe",
+                ora: "16.17",
+                sent: false
+            },
             activeIndex: 0,
             chat: [
                 {
@@ -210,7 +215,11 @@ const app = new Vue(
                     }
                     this.chat[this.activeIndex].messages.push(newElement)
                 }
-                this.newText=""
+                this.newText="";
+                setTimeout(this.answer,1000)
+            },
+            answer(){
+                this.chat[this.activeIndex].messages.push(this.standardText)                
             }
         }
     }
