@@ -1,25 +1,25 @@
-const app = new Vue (
+const app = new Vue(
     {
-        el:"#app",
+        el: "#app",
         data: {
-            activeIndex:0,
+            activeIndex: 0,
             chat: [
                 {
                     name: "Michele",
                     foto: "img/avatar_1.jpg",
                     messages: [
                         {
-                            text:"Hai portato a spasso il cane?",
+                            text: "Hai portato a spasso il cane?",
                             ora: "15:30",
                             sent: true
                         },
                         {
-                            text:"Ricordati di stendere i panni",
+                            text: "Ricordati di stendere i panni",
                             ora: "15:50",
                             sent: true
                         },
                         {
-                            text:"Tutto fatto!",
+                            text: "Tutto fatto!",
                             ora: "16:15",
                             sent: false
                         }
@@ -30,12 +30,12 @@ const app = new Vue (
                     foto: "img/avatar_2.jpg",
                     messages: [
                         {
-                            text:"Esci stasera?",
+                            text: "Esci stasera?",
                             ora: "15:30",
                             sent: true
                         },
                         {
-                            text:"Seh usciamo...",
+                            text: "Seh usciamo...",
                             ora: "16:15",
                             sent: false
                         }
@@ -46,68 +46,68 @@ const app = new Vue (
                     foto: "img/avatar_3.jpg",
                     messages: [
                         {
-                            text:"Povero Gabbiano",
+                            text: "Povero Gabbiano",
                             ora: "15:30",
                             sent: true
                         },
                         {
-                            text:"Hai perduto la compagna",
+                            text: "Hai perduto la compagna",
                             ora: "15:50",
                             sent: false
                         },
                         {
-                            text:"haahahhahahahahahhahahahhahahhaahhaahhahhahhhahahhhaahahhahahahahahhahahahhahahhaahhaahhahhahhhahahhhaahahhahahahahahhahahahhahahhaahhaahhahhahhhahahh",
+                            text: "haahahhahahahahahhahahahhahahhaahha ahhahhahhhahahhhaahahhahahahahahhahahahhahahhaahhaahhahhahhhahahhhaahahhahahahahahhahahahhahahhaahhaahhahhahhhahahh",
                             ora: "16:15",
                             sent: false
                         }
-                    ]
+                    ],
                 },
                 {
                     name: "Alessandro B.",
                     foto: "img/avatar_4.jpg",
                     messages: [
                         {
-                            text:"Hai portato a spasso il cane?",
+                            text: "Hai portato a spasso il cane?",
                             ora: "15:30",
                             sent: true
                         },
                         {
-                            text:"Ricordati di stendere i panni",
+                            text: "Ricordati di stendere i panni",
                             ora: "15:50",
                             sent: true
                         },
                         {
-                            text:"Tutto fatto!",
+                            text: "Tutto fatto!",
                             ora: "16:15",
                             sent: false
                         },
                         {
-                            text:"Hai portato a spasso il cane?",
+                            text: "Hai portato a spasso il cane?",
                             ora: "15:30",
                             sent: true
                         },
                         {
-                            text:"Ricordati di stendere i panni",
+                            text: "Ricordati di stendere i panni Ricordati di stendere i panniRicordati di stendere i panniRicordati di stendere i panni",
                             ora: "15:50",
                             sent: true
                         },
                         {
-                            text:"Tutto fatto!",
+                            text: "Tutto fatto!",
                             ora: "16:15",
                             sent: false
                         },
                         {
-                            text:"Hai portato a spasso il cane?",
+                            text: "Hai portato a spasso il cane?",
                             ora: "15:30",
                             sent: true
                         },
                         {
-                            text:"Ricordati di stendere i panni",
+                            text: "Ricordati di stendere i panni",
                             ora: "15:50",
                             sent: true
                         },
                         {
-                            text:"Tutto fatto!",
+                            text: "Tutto fatto!",
                             ora: "16:15",
                             sent: false
                         }
@@ -118,17 +118,17 @@ const app = new Vue (
                     foto: "img/avatar_5.jpg",
                     messages: [
                         {
-                            text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nemo commodi nam doloremque, unde impedit! Ipsum consectetur, cum vel sint minus dolor inventore! Labore assumenda nobis et, repellendus ipsum aut!",
+                            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nemo commodi nam doloremque, unde impedit! Ipsum consectetur, cum vel sint minus dolor inventore! Labore assumenda nobis et, repellendus ipsum aut!",
                             ora: "15:30",
                             sent: true
                         },
                         {
-                            text:"Ricordati di stendere i panni",
+                            text: "Ricordati di stendere i panni",
                             ora: "15:50",
                             sent: true
                         },
                         {
-                            text:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nemo commodi nam doloremque, unde impedit! Ipsum consectetur, cum vel sint minus dolor inventore! Labore assumenda nobis et, repellendus ipsum aut!",
+                            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nemo commodi nam doloremque, unde impedit! Ipsum consectetur, cum vel sint minus dolor inventore! Labore assumenda nobis et, repellendus ipsum aut!",
                             ora: "16:15",
                             sent: false
                         }
@@ -139,17 +139,17 @@ const app = new Vue (
                     foto: "img/avatar_6.jpg",
                     messages: [
                         {
-                            text:"Hai portato a spasso il cane?",
+                            text: "Hai portato a spasso il cane?",
                             ora: "15:30",
                             sent: true
                         },
                         {
-                            text:"Ricordati di stendere i panni",
+                            text: "Ricordati di stendere i panni",
                             ora: "15:50",
                             sent: true
                         },
                         {
-                            text:"Tutto fatto!",
+                            text: "Tutto fatto!",
                             ora: "16:15",
                             sent: false
                         }
@@ -160,17 +160,17 @@ const app = new Vue (
                     foto: "img/avatar_7.jpg",
                     messages: [
                         {
-                            text:"Hai portato a spasso il cane?",
+                            text: "Hai portato a spasso il cane?",
                             ora: "15:30",
                             sent: true
                         },
                         {
-                            text:"Ricordati di stendere i panni",
+                            text: "Ricordati di stendere i panni",
                             ora: "15:50",
                             sent: true
                         },
                         {
-                            text:"Tutto fatto!",
+                            text: "Tutto fatto!",
                             ora: "16:15",
                             sent: false
                         }
@@ -181,17 +181,17 @@ const app = new Vue (
                     foto: "img/avatar_8.jpg",
                     messages: [
                         {
-                            text:"Hai portato a spasso il cane?",
+                            text: "Hai portato a spasso il cane?",
                             ora: "15:30",
                             sent: true
                         },
                         {
-                            text:"Ricordati di stendere i panni",
+                            text: "Ricordati di stendere i panni",
                             ora: "15:50",
                             sent: true
                         },
                         {
-                            text:"Don't kill my vibe",
+                            text: "Don't kill my vibe",
                             ora: "16:15",
                             sent: false
                         }
@@ -200,5 +200,4 @@ const app = new Vue (
             ]
         }
     }
-) 
-    
+)
