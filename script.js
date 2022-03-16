@@ -2,6 +2,7 @@ const app = new Vue(
     {
         el: "#app",
         data: {
+            newText:"",
             activeIndex: 0,
             chat: [
                 {
@@ -198,6 +199,19 @@ const app = new Vue(
                     ]
                 }
             ]
+        },
+        methods: {
+            sendText(){
+                if (this.newText != "") {
+                    const newElement={
+                        text: this.newText,
+                        ora: "16:15",
+                        sent: true
+                    }
+                    this.chat[this.activeIndex].messages.push(newElement)
+                }
+                this.newText=""
+            }
         }
     }
 )
