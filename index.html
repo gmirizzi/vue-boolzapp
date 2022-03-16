@@ -44,7 +44,7 @@
                         <img :src="element.foto" alt="">
                         <div class="info">
                             <div class="name">{{element.name}}</div>
-                            <div class="last-message">Ultimo messaggio inviato</div>
+                            <div class="last-message">{{getLastText(index)}}</div>
                             <div class="ora">12:00</div>
                         </div>
                     </div>

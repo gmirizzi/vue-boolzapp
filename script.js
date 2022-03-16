@@ -222,6 +222,11 @@ const app = new Vue(
                     sent: false
                 }
                 this.chat[this.activeIndex].messages.push(standardText);              
+            },
+            getLastText(index){
+                const indexOfLastElement=this.chat[index].messages.length-1
+                const lastText=this.chat[index].messages[indexOfLastElement].text
+                return lastText
             }
         }
     }

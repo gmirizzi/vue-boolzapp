@@ -17,6 +17,13 @@
     font-size: .7rem;
 }
 
+.last-message {
+    margin-top: .5em;
+    height: 1em;
+    width: 200px;
+    overflow: hidden;
+}
+
 body {
     background-color: #d8dbd6ff;
     position: relative;
