@@ -2,6 +2,7 @@ const app = new Vue(
     {
         el: "#app",
         data: {
+            searchStr:"",
             newText:"",
             activeIndex: 0,
             chat: [
