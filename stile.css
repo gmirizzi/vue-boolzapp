@@ -200,6 +200,18 @@ header {
     overflow-wrap: break-word;
 }
 
+.text .dropdown{
+    position: absolute;
+    right: .5em;
+    top:.5em;
+    color: var(--secondary-color);
+    display: none;
+}
+
+.text:hover .dropdown {
+    display: block;
+}
+
 .text .ora {
     bottom: .5em;
     right: .5em;
