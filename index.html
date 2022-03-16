@@ -67,10 +67,16 @@
                 </div>
             </div>
             <div id="conversazione">
-                <div v-for="message in chat[activeIndex].messages" class="messaggio" :class="message.sent?'inviato':'ricevuto'">
+                <div v-for="(message, index) in chat[activeIndex].messages" class="messaggio" :class="message.sent?'inviato':'ricevuto'">
                     <div class="text">
                         {{message.text}}
-                        <div class="dropdown"><i class="fa-solid fa-angle-down"></i></div>
+                        <div class="dropdown">
+                            <i class="fa-solid fa-angle-down"></i>
+                            <div class="menu">
+                                <div>Info messaggio</div>
+                                <div @click="deleteText(index)">Cancella messaggio</div>
+                            </div>
+                        </div>
                         <div class="ora">{{message.ora}}</div>
                     </div>
                 </div>

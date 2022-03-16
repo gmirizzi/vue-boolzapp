@@ -233,6 +233,11 @@ const app = new Vue(
                 const indexOfLastElement=this.chat[index].messages.length-1
                 const dateOflastText=this.chat[index].messages[indexOfLastElement].ora
                 return dateOflastText
+            },
+            deleteText(index){
+                if (this.chat[this.activeIndex].messages.length>1){
+                    this.chat[this.activeIndex].messages.splice(index,1)
+                }
             }
         }
     }

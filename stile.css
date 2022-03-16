@@ -200,15 +200,40 @@ header {
     overflow-wrap: break-word;
 }
 
-.text .dropdown{
+.text .dropdown i, .menu{
     position: absolute;
     right: .5em;
     top:.5em;
     color: var(--secondary-color);
+}
+
+.dropdown .menu {
+    color: black;
+    background-color: white;
+    border: 1px solid lightgray;
+    z-index: 1;
+    border-radius: 5px;
+    padding: .5em;
+}
+
+.menu div {
+    cursor: pointer;
+    padding: .5em;
+}
+
+.menu div:hover {
+    background-color: var(--secondary-color)
+}
+
+.dropdown i, .menu{
     display: none;
 }
 
-.text:hover .dropdown {
+.dropdown:hover .menu{
+    display: block;
+}
+
+.text:hover .dropdown i{
     display: block;
 }
 
