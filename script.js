@@ -305,8 +305,14 @@ const app = new Vue(
                 }
             },
             deleteChat(){
-                this.chat.splice(this.activeIndex, 1);
-                this.optionsClicked=false;
+                if (this.activeIndex==this.chat.length-1){
+                    this.chat.splice(this.activeIndex, 1);
+                    this.optionsClicked=false;
+                    this.activeIndex--
+                } else {
+                    this.chat.splice(this.activeIndex, 1);
+                    this.optionsClicked=false;
+                }
             }
         }
     }
