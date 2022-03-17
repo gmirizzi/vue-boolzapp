@@ -96,37 +96,37 @@ const app = new Vue(
                         },
                         {
                             text: "Hai portato a spasso il cane?",
-                            ora: "15:30",
+                            ora: "17:30",
                             clicked: false,
                             sent: true
                         },
                         {
                             text: "Ricordati di stendere i panni Ricordati di stendere i panniRicordati di stendere i panniRicordati di stendere i panni",
-                            ora: "15:50",
+                            ora: "17:50",
                             clicked: false,
                             sent: true
                         },
                         {
                             text: "Tutto fatto!",
-                            ora: "16:15",
+                            ora: "18:15",
                             clicked: false,
                             sent: false
                         },
                         {
                             text: "Hai portato a spasso il cane?",
-                            ora: "15:30",
+                            ora: "18:30",
                             clicked: false,
                             sent: true
                         },
                         {
                             text: "Ricordati di stendere i panni",
-                            ora: "15:50",
+                            ora: "18:50",
                             clicked: false,
                             sent: true
                         },
                         {
                             text: "Tutto fatto!",
-                            ora: "16:15",
+                            ora: "19:15",
                             clicked: false,
                             sent: false
                         }
@@ -265,7 +265,7 @@ const app = new Vue(
             },
             deleteText(index){
                 if (this.chat[this.activeIndex].messages.length>1){
-                    this.chat[this.activeIndex].messages.splice(index,1)
+                    this.chat[this.activeIndex].messages.splice(index,1);
                 }
             }
         }

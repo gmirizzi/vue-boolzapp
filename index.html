@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div id="conversazione">
-                <div v-for="(message, index) in chat[activeIndex].messages" class="messaggio" :class="message.sent?'inviato':'ricevuto'">
+                <div v-for="(message, index) in chat[activeIndex].messages" :key="message.ora" class="messaggio" :class="message.sent?'inviato':'ricevuto'">
                     <div @click="message.clicked=!message.clicked" class="text">
                         {{message.text}}
                         <div class="dropdown">
