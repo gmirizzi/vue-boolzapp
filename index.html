@@ -82,7 +82,10 @@
             <div id="textArea">
                 <button><i class="fa-regular fa-face-smile"></i></button>
                 <input v-model.trim="chat[activeIndex].newText" @keydown.enter="sendText" type="text" placeholder="Scrivi un messaggio">
-                <button><i class="fa-solid fa-microphone"></i></button>
+                <button>
+                    <i v-if="chat[activeIndex].newText==''" class="fa-solid fa-microphone"></i>
+                    <i v-else @click="sendText" class="fa-solid fa-paper-plane"></i>
+                </button>
             </div>
         </div>
     </div>

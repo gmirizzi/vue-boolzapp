@@ -255,6 +255,7 @@ button {
     background-color: transparent;
     font-size: 1.2rem;
     color: var(--icons-color);
+    cursor: pointer;
 }
 
 #textArea input {
