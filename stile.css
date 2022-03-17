@@ -200,20 +200,21 @@ header {
     overflow-wrap: break-word;
 }
 
-.text .dropdown i, .menu{
+.text i, .menu{
     position: absolute;
     right: .5em;
     top:.5em;
     color: var(--secondary-color);
 }
 
-.dropdown .menu {
+.menu {
     color: black;
     background-color: white;
     border: 1px solid lightgray;
     z-index: 1;
     border-radius: 5px;
     padding: .5em;
+    top:1.5em;
 }
 
 .menu div {
@@ -225,13 +226,14 @@ header {
     background-color: var(--secondary-color)
 }
 
-.dropdown i {
+.text i {
     display: none;
     cursor: pointer;
+    top:.5em;
 }
 
 
-.text:hover .dropdown i{
+.text:hover i{
     display: block;
 }
 
