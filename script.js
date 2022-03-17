@@ -248,9 +248,9 @@ const app = new Vue(
                         clicked: false
                     }
                     this.chat[this.activeIndex].messages.push(newElement)
+                    this.chat[this.activeIndex].newText="";
+                    this.answer(this.activeIndex)
                 }
-                this.chat[this.activeIndex].newText="";
-                this.answer(this.activeIndex)
             },
             answer(index){
                 setTimeout(() => {
