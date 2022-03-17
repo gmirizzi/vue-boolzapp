@@ -3,10 +3,10 @@ const app = new Vue(
         el: "#app",
         data: {
             searchStr:"",
-            newText:"",
             activeIndex: 0,
             chat: [
-                {
+                {   
+                        newText:"",
                     name: "Michele",
                     foto: "img/avatar_1.jpg",
                     messages: [
@@ -30,7 +30,8 @@ const app = new Vue(
                         }
                     ]
                 },
-                {
+                {   
+                        newText:"",
                     name: "Fabio",
                     foto: "img/avatar_2.jpg",
                     messages: [
@@ -48,7 +49,8 @@ const app = new Vue(
                         }
                     ]
                 },
-                {
+                {   
+                        newText:"",
                     name: "Samuele",
                     foto: "img/avatar_3.jpg",
                     messages: [
@@ -72,7 +74,8 @@ const app = new Vue(
                         }
                     ],
                 },
-                {
+                {   
+                        newText:"",
                     name: "Alessandro B.",
                     foto: "img/avatar_4.jpg",
                     messages: [
@@ -132,7 +135,8 @@ const app = new Vue(
                         }
                     ]
                 },
-                {
+                {   
+                        newText:"",
                     name: "Alessandro L.",
                     foto: "img/avatar_5.jpg",
                     messages: [
@@ -156,7 +160,8 @@ const app = new Vue(
                         }
                     ]
                 },
-                {
+                {   
+                        newText:"",
                     name: "Claudia",
                     foto: "img/avatar_6.jpg",
                     messages: [
@@ -180,7 +185,8 @@ const app = new Vue(
                         }
                     ]
                 },
-                {
+                {   
+                        newText:"",
                     name: "Federico",
                     foto: "img/avatar_7.jpg",
                     messages: [
@@ -204,7 +210,8 @@ const app = new Vue(
                         }
                     ]
                 },
-                {
+                {   
+                    newText:"",
                     name: "Davide",
                     foto: "img/avatar_8.jpg",
                     messages: [
@@ -232,16 +239,17 @@ const app = new Vue(
         },
         methods: {
             sendText(){
-                if (this.newText != "") {
+                if (this.chat[this.activeIndex].newText != "") {
                     const date= new Date()
                     const newElement={
-                        text: this.newText,
+                        text: this.chat[this.activeIndex].newText,
                         ora: date.toLocaleTimeString('it-IT'),
-                        sent: true
+                        sent: true,
+                        clicked: false
                     }
                     this.chat[this.activeIndex].messages.push(newElement)
                 }
-                this.newText="";
+                this.chat[this.activeIndex].newText="";
                 setTimeout(this.answer,1000)
             },
             answer(){
@@ -249,7 +257,8 @@ const app = new Vue(
                 const standardText={
                     text: "Don't kill my vibe",
                     ora: date.toLocaleTimeString('it-IT'),
-                    sent: false
+                    sent: false,
+                    clicked:false
                 }
                 this.chat[this.activeIndex].messages.push(standardText);              
             },

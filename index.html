@@ -83,7 +83,7 @@
             </div>
             <div id="textArea">
                 <button><i class="fa-regular fa-face-smile"></i></button>
-                <input v-model.trim="newText" @keydown.enter="sendText" type="text" placeholder="Scrivi un messaggio">
+                <input v-model.trim="chat[activeIndex].newText" @keydown.enter="sendText" type="text" placeholder="Scrivi un messaggio">
                 <button><i class="fa-solid fa-microphone"></i></button>
             </div>
         </div>
