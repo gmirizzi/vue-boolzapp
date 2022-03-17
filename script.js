@@ -13,16 +13,19 @@ const app = new Vue(
                         {
                             text: "Hai portato a spasso il cane?",
                             ora: "15:30",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Ricordati di stendere i panni",
                             ora: "15:50",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Tutto fatto!",
                             ora: "16:15",
+                            clicked: false,
                             sent: false
                         }
                     ]
@@ -34,11 +37,13 @@ const app = new Vue(
                         {
                             text: "Esci stasera?",
                             ora: "15:30",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Seh usciamo...",
                             ora: "16:15",
+                            clicked: false,
                             sent: false
                         }
                     ]
@@ -50,16 +55,19 @@ const app = new Vue(
                         {
                             text: "Povero Gabbiano",
                             ora: "15:30",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Hai perduto la compagna",
                             ora: "15:50",
+                            clicked: false,
                             sent: false
                         },
                         {
                             text: "haahahhahahahahahhahahahhahahhaahha ahhahhahhhahahhhaahahhahahahahahhahahahhahahhaahhaahhahhahhhahahhhaahahhahahahahahhahahahhahahhaahhaahhahhahhhahahh",
                             ora: "16:15",
+                            clicked: false,
                             sent: false
                         }
                     ],
@@ -71,46 +79,55 @@ const app = new Vue(
                         {
                             text: "Hai portato a spasso il cane?",
                             ora: "15:30",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Ricordati di stendere i panni",
                             ora: "15:50",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Tutto fatto!",
                             ora: "16:15",
+                            clicked: false,
                             sent: false
                         },
                         {
                             text: "Hai portato a spasso il cane?",
                             ora: "15:30",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Ricordati di stendere i panni Ricordati di stendere i panniRicordati di stendere i panniRicordati di stendere i panni",
                             ora: "15:50",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Tutto fatto!",
                             ora: "16:15",
+                            clicked: false,
                             sent: false
                         },
                         {
                             text: "Hai portato a spasso il cane?",
                             ora: "15:30",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Ricordati di stendere i panni",
                             ora: "15:50",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Tutto fatto!",
                             ora: "16:15",
+                            clicked: false,
                             sent: false
                         }
                     ]
@@ -122,16 +139,19 @@ const app = new Vue(
                         {
                             text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nemo commodi nam doloremque, unde impedit! Ipsum consectetur, cum vel sint minus dolor inventore! Labore assumenda nobis et, repellendus ipsum aut!",
                             ora: "15:30",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Ricordati di stendere i panni",
                             ora: "15:50",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nemo commodi nam doloremque, unde impedit! Ipsum consectetur, cum vel sint minus dolor inventore! Labore assumenda nobis et, repellendus ipsum aut!",
                             ora: "16:15",
+                            clicked: false,
                             sent: false
                         }
                     ]
@@ -143,16 +163,19 @@ const app = new Vue(
                         {
                             text: "Hai portato a spasso il cane?",
                             ora: "15:30",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Ricordati di stendere i panni",
                             ora: "15:50",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Tutto fatto!",
                             ora: "16:15",
+                            clicked: false,
                             sent: false
                         }
                     ]
@@ -164,16 +187,19 @@ const app = new Vue(
                         {
                             text: "Hai portato a spasso il cane?",
                             ora: "15:30",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Ricordati di stendere i panni",
                             ora: "15:50",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Tutto fatto!",
                             ora: "16:15",
+                            clicked: false,
                             sent: false
                         }
                     ]
@@ -185,16 +211,19 @@ const app = new Vue(
                         {
                             text: "Hai portato a spasso il cane?",
                             ora: "15:30",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Ricordati di stendere i panni",
                             ora: "15:50",
+                            clicked: false,
                             sent: true
                         },
                         {
                             text: "Don't kill my vibe",
                             ora: "16:15",
+                            clicked: false,
                             sent: false
                         }
                     ]

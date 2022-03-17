@@ -225,13 +225,11 @@ header {
     background-color: var(--secondary-color)
 }
 
-.dropdown i, .menu{
+.dropdown i {
     display: none;
+    cursor: pointer;
 }
 
-.dropdown:hover .menu{
-    display: block;
-}
 
 .text:hover .dropdown i{
     display: block;

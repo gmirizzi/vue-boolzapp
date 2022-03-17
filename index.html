@@ -68,11 +68,11 @@
             </div>
             <div id="conversazione">
                 <div v-for="(message, index) in chat[activeIndex].messages" class="messaggio" :class="message.sent?'inviato':'ricevuto'">
-                    <div class="text">
+                    <div @click="message.clicked=!message.clicked" class="text">
                         {{message.text}}
                         <div class="dropdown">
                             <i class="fa-solid fa-angle-down"></i>
-                            <div class="menu">
+                            <div v-if="message.clicked" class="menu">
                                 <div>Info messaggio</div>
                                 <div @click="deleteText(index)">Cancella messaggio</div>
                             </div>
