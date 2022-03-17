@@ -277,6 +277,8 @@ const app = new Vue(
             deleteText(index){
                 if (this.chat[this.activeIndex].messages.length>1){
                     this.chat[this.activeIndex].messages.splice(index,1);
+                } else {
+                    this.chat.splice(this.activeIndex,1)
                 }
             }
         }
