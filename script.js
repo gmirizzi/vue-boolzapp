@@ -2,11 +2,18 @@ const app = new Vue(
     {
         el: "#app",
         data: {
-            searchStr:"",
+            searchStr: "",
             activeIndex: 0,
+            standardAnswers : [
+                'Ok',
+                "Don't Kill my vibe",
+                'Non posso parlare',
+                'Ti richiamo',
+                'Non sei cortese'
+            ],
             chat: [
-                {   
-                        newText:"",
+                {
+                    newText: "",
                     name: "Michele",
                     foto: "img/avatar_1.jpg",
                     messages: [
@@ -30,8 +37,8 @@ const app = new Vue(
                         }
                     ]
                 },
-                {   
-                        newText:"",
+                {
+                    newText: "",
                     name: "Fabio",
                     foto: "img/avatar_2.jpg",
                     messages: [
@@ -49,8 +56,8 @@ const app = new Vue(
                         }
                     ]
                 },
-                {   
-                        newText:"",
+                {
+                    newText: "",
                     name: "Samuele",
                     foto: "img/avatar_3.jpg",
                     messages: [
@@ -74,8 +81,8 @@ const app = new Vue(
                         }
                     ],
                 },
-                {   
-                        newText:"",
+                {
+                    newText: "",
                     name: "Alessandro B.",
                     foto: "img/avatar_4.jpg",
                     messages: [
@@ -135,8 +142,8 @@ const app = new Vue(
                         }
                     ]
                 },
-                {   
-                        newText:"",
+                {
+                    newText: "",
                     name: "Alessandro L.",
                     foto: "img/avatar_5.jpg",
                     messages: [
@@ -160,8 +167,8 @@ const app = new Vue(
                         }
                     ]
                 },
-                {   
-                        newText:"",
+                {
+                    newText: "",
                     name: "Claudia",
                     foto: "img/avatar_6.jpg",
                     messages: [
@@ -185,8 +192,8 @@ const app = new Vue(
                         }
                     ]
                 },
-                {   
-                        newText:"",
+                {
+                    newText: "",
                     name: "Federico",
                     foto: "img/avatar_7.jpg",
                     messages: [
@@ -210,8 +217,8 @@ const app = new Vue(
                         }
                     ]
                 },
-                {   
-                    newText:"",
+                {
+                    newText: "",
                     name: "Davide",
                     foto: "img/avatar_8.jpg",
                     messages: [
@@ -238,47 +245,48 @@ const app = new Vue(
             ]
         },
         methods: {
-            sendText(){
+            sendText() {
                 if (this.chat[this.activeIndex].newText != "") {
-                    const date= new Date()
-                    const newElement={
+                    const date = new Date()
+                    const newElement = {
                         text: this.chat[this.activeIndex].newText,
                         ora: date.toLocaleTimeString('it-IT'),
                         sent: true,
                         clicked: false
                     }
                     this.chat[this.activeIndex].messages.push(newElement)
-                    this.chat[this.activeIndex].newText="";
+                    this.chat[this.activeIndex].newText = "";
                     this.answer(this.activeIndex)
                 }
             },
-            answer(index){
+            answer(index) {
                 setTimeout(() => {
-                    const date= new Date()
-                    const standardText={
-                        text: "Don't kill my vibe",
+                    const randomIndex = Math.floor(Math.random()*this.standardAnswers.length)
+                    const date = new Date()
+                    const standardText = {
+                        text: this.standardAnswers[randomIndex],
                         ora: date.toLocaleTimeString('it-IT'),
                         sent: false,
-                        clicked:false
+                        clicked: false
                     }
-                    this.chat[index].messages.push(standardText);                                  
+                    this.chat[index].messages.push(standardText);
                 }, 1000);
             },
-            getLastText(index){
-                const indexOfLastElement=this.chat[index].messages.length-1
-                const lastText=this.chat[index].messages[indexOfLastElement].text
+            getLastText(index) {
+                const indexOfLastElement = this.chat[index].messages.length - 1
+                const lastText = this.chat[index].messages[indexOfLastElement].text
                 return lastText
             },
-            getDateOfLastText(index){
-                const indexOfLastElement=this.chat[index].messages.length-1
-                const dateOflastText=this.chat[index].messages[indexOfLastElement].ora
+            getDateOfLastText(index) {
+                const indexOfLastElement = this.chat[index].messages.length - 1
+                const dateOflastText = this.chat[index].messages[indexOfLastElement].ora
                 return dateOflastText
             },
-            deleteText(index){
-                if (this.chat[this.activeIndex].messages.length>1){
-                    this.chat[this.activeIndex].messages.splice(index,1);
+            deleteText(index) {
+                if (this.chat[this.activeIndex].messages.length > 1) {
+                    this.chat[this.activeIndex].messages.splice(index, 1);
                 } else {
-                    this.chat.splice(this.activeIndex,1)
+                    this.chat.splice(this.activeIndex, 1)
                 }
             }
         }

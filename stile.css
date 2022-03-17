@@ -263,6 +263,10 @@ button {
     padding: 5px;
 }
 
+#textArea i {
+    color:var(--secondary-color)
+}
+
 .active {
     background-color: #e9ebebff;
 }
