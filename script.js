@@ -13,6 +13,7 @@ const app = new Vue(
             ],
             chat: [
                 {
+                    ultimoAccesso: "Ultimo accesso oggi alle 12:00",
                     newText: "",
                     name: "Michele",
                     foto: "img/avatar_1.jpg",
@@ -38,6 +39,7 @@ const app = new Vue(
                     ]
                 },
                 {
+                    ultimoAccesso: "Ultimo accesso oggi alle 12:00",
                     newText: "",
                     name: "Fabio",
                     foto: "img/avatar_2.jpg",
@@ -57,6 +59,7 @@ const app = new Vue(
                     ]
                 },
                 {
+                    ultimoAccesso: "Ultimo accesso oggi alle 12:00",
                     newText: "",
                     name: "Samuele",
                     foto: "img/avatar_3.jpg",
@@ -82,6 +85,7 @@ const app = new Vue(
                     ],
                 },
                 {
+                    ultimoAccesso: "Ultimo accesso oggi alle 12:00",
                     newText: "",
                     name: "Alessandro B.",
                     foto: "img/avatar_4.jpg",
@@ -143,6 +147,7 @@ const app = new Vue(
                     ]
                 },
                 {
+                    ultimoAccesso: "Ultimo accesso oggi alle 12:00",
                     newText: "",
                     name: "Alessandro L.",
                     foto: "img/avatar_5.jpg",
@@ -168,6 +173,7 @@ const app = new Vue(
                     ]
                 },
                 {
+                    ultimoAccesso: "Ultimo accesso oggi alle 12:00",
                     newText: "",
                     name: "Claudia",
                     foto: "img/avatar_6.jpg",
@@ -193,6 +199,7 @@ const app = new Vue(
                     ]
                 },
                 {
+                    ultimoAccesso: "Ultimo accesso oggi alle 12:00",
                     newText: "",
                     name: "Federico",
                     foto: "img/avatar_7.jpg",
@@ -218,6 +225,7 @@ const app = new Vue(
                     ]
                 },
                 {
+                    ultimoAccesso: "Ultimo accesso oggi alle 12:00",
                     newText: "",
                     name: "Davide",
                     foto: "img/avatar_8.jpg",
@@ -256,13 +264,14 @@ const app = new Vue(
                     }
                     this.chat[this.activeIndex].messages.push(newElement)
                     this.chat[this.activeIndex].newText = "";
+                    this.chat[this.activeIndex].ultimoAccesso="Sta scrivendo..."
                     this.answer(this.activeIndex)
                 }
             },
             answer(index) {
                 setTimeout(() => {
-                    const randomIndex = Math.floor(Math.random()*this.standardAnswers.length)
                     const date = new Date()
+                    const randomIndex = Math.floor(Math.random()*this.standardAnswers.length)
                     const standardText = {
                         text: this.standardAnswers[randomIndex],
                         ora: date.toLocaleTimeString('it-IT'),
@@ -270,7 +279,12 @@ const app = new Vue(
                         clicked: false
                     }
                     this.chat[index].messages.push(standardText);
+                    this.chat[index].ultimoAccesso="Online"
                 }, 1000);
+                setTimeout(() => {
+                    const date = new Date();
+                    this.chat[index].ultimoAccesso=`Ultimo accesso: ${date.toLocaleTimeString('it-IT')}`
+                },2000);
             },
             getLastText(index) {
                 const indexOfLastElement = this.chat[index].messages.length - 1
