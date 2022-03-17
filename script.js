@@ -2,6 +2,7 @@ const app = new Vue(
     {
         el: "#app",
         data: {
+            optionsClicked:false,
             searchStr: "",
             activeIndex: 0,
             standardAnswers : [
@@ -300,8 +301,12 @@ const app = new Vue(
                 if (this.chat[this.activeIndex].messages.length > 1) {
                     this.chat[this.activeIndex].messages.splice(index, 1);
                 } else {
-                    this.chat.splice(this.activeIndex, 1)
+                    this.deleteChat()
                 }
+            },
+            deleteChat(){
+                this.chat.splice(this.activeIndex, 1);
+                this.optionsClicked=false;
             }
         }
     }

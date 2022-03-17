@@ -63,7 +63,12 @@
                 <div class="btns">
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
                     <button><i class="fa-solid fa-paperclip"></i></button>
-                    <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <button>
+                        <i @click="optionsClicked=!optionsClicked" class="fa-solid fa-ellipsis-vertical"></i>
+                        <div v-if="optionsClicked" class="menu">
+                            <div @click="deleteChat">Elimina chat</div>
+                        </div>
+                    </button>
                 </div>
             </div>
             <div id="conversazione">
