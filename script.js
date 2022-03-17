@@ -250,17 +250,19 @@ const app = new Vue(
                     this.chat[this.activeIndex].messages.push(newElement)
                 }
                 this.chat[this.activeIndex].newText="";
-                setTimeout(this.answer,1000)
+                this.answer(this.activeIndex)
             },
-            answer(){
-                const date= new Date()
-                const standardText={
-                    text: "Don't kill my vibe",
-                    ora: date.toLocaleTimeString('it-IT'),
-                    sent: false,
-                    clicked:false
-                }
-                this.chat[this.activeIndex].messages.push(standardText);              
+            answer(index){
+                setTimeout(() => {
+                    const date= new Date()
+                    const standardText={
+                        text: "Don't kill my vibe",
+                        ora: date.toLocaleTimeString('it-IT'),
+                        sent: false,
+                        clicked:false
+                    }
+                    this.chat[index].messages.push(standardText);                                  
+                }, 1000);
             },
             getLastText(index){
                 const indexOfLastElement=this.chat[index].messages.length-1
