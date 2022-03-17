@@ -38,7 +38,7 @@
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 <input type="text" v-model.trim="searchStr" placeholder="Cerca o inizia una nuova chat">
             </div>
-            <div id="chatList">
+            <div v-if="chat.length>0" id="chatList">
                 <div v-for="(element,index) in chat" v-if="element.name.toLowerCase().includes(searchStr.toLowerCase())||searchStr==''" class="chat" :class="{active: index==activeIndex}" @click="activeIndex=index">
                     <div class="user">
                         <img :src="element.foto" alt="">
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <div id="chatAperta">
+        <div v-if="chat.length>0" id="chatAperta">
             <div id="interlocutore">
                 <div class="user">
                     <img :src="chat[activeIndex].foto" alt="">
